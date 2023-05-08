@@ -29,7 +29,7 @@ app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
     res.send('Bienvenidos a mi API de archivos')
-})
+});
 
 // Ruta para guardar imagenes
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
