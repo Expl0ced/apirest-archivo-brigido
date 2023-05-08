@@ -34,6 +34,11 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 
+
+app.get('/', (req, res) => {
+    res.send('Bienvenidos a mi API')
+})
+
 // Ruta para guardar imagenes
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const storage = multer.diskStorage({
