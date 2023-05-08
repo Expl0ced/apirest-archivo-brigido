@@ -21,15 +21,13 @@ app.use(cors({
     preflightContinue: true
 }));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
-app.use(morgan('dev'));
-
-
 
 app.get('/', (req, res) => {
     res.send('Bienvenidos a mi API de archivos')
 });
+
+app.use(morgan('dev'));
 
 // Ruta para guardar imagenes
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
