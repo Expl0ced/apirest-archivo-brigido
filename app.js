@@ -20,6 +20,7 @@ app.use(cors({
     optionsSuccessStatus: 204,
     preflightContinue: true
 }));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
