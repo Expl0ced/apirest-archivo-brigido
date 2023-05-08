@@ -23,11 +23,6 @@ app.use(cors({
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.get('/', (req, res) => {
-    res.send('Bienvenidos a mi API de archivos')
-});
-
 app.use(morgan('dev'));
 
 // Ruta para guardar imagenes
