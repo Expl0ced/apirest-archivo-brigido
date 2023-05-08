@@ -28,7 +28,7 @@ app.use(morgan('dev'));
 
 
 app.get('/', (req, res) => {
-    res.send('Bienvenidos a mi API')
+    res.send('Bienvenidos a mi API de archivos')
 })
 
 // Ruta para guardar imagenes
