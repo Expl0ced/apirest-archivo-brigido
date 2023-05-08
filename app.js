@@ -9,14 +9,6 @@ const fs = require('fs').promises;
 const fs2 = require('fs');
 const moment = require('moment')
 const axios = require('axios');
-const {Storage} = require('@google-cloud/storage');
-// const { google } = require('googleapis');
-// const auth = new google.auth.GoogleAuth({
-//     keyFile: 'credenciales.json',
-//     scopes: ['https://www.googleapis.com/auth/drive.file']
-// });
-
-// const drive = google.drive({ version: 'v3', auth });
 
 const app = express();
 app.use(cors({
